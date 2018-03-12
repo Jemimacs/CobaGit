@@ -1,0 +1,799 @@
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM
+$ git init
+Initialized empty Git repository in D:/PPM/.git/
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git add coba,html
+fatal: pathspec 'coba,html' did not match any files
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git add coba.html
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   coba.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+        pertemuan 1.txt
+        pertemuan 2.txt
+        rangkuman git.txt
+        tes awal pertemuan 2.txt
+
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git commit -m "Add coba.html"
+[master (root-commit) 0c7cfaa] Add coba.html
+ 1 file changed, 30 insertions(+)
+ create mode 100644 coba.html
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git add '*.txt'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git commit -m "Add all txt files"
+[master fd7ec47] Add all txt files
+ 4 files changed, 175 insertions(+)
+ create mode 100644 pertemuan 1.txt
+ create mode 100644 pertemuan 2.txt
+ create mode 100644 rangkuman git.txt
+ create mode 100644 tes awal pertemuan 2.txt
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git log
+commit fd7ec476bd6301ea8af844bec4f0ece7db1e4fd1 (HEAD -> master)
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:59:24 2018 +0700
+
+    Add all txt files
+
+commit 0c7cfaa5846ce3ac60db1a50ffda477f9b02069f
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:50:27 2018 +0700
+
+    Add coba.html
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git add 'test'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+        new file:   test/e6774eccef8476f9f74e827a3d7944e0.jpg
+        new file:   test/eb9bcca11681182e7406e589f64e19cc.jpg
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+        new file:   test/e6774eccef8476f9f74e827a3d7944e0.jpg
+        new file:   test/eb9bcca11681182e7406e589f64e19cc.jpg
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    test/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+        deleted:    test/e6774eccef8476f9f74e827a3d7944e0.jpg
+        deleted:    test/eb9bcca11681182e7406e589f64e19cc.jpg
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+        image/
+
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git add 'image'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git commit -m "Add folder image"
+[master 1117500] Add folder image
+ 6 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 image/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+ create mode 100644 image/e6774eccef8476f9f74e827a3d7944e0.jpg
+ create mode 100644 image/eb9bcca11681182e7406e589f64e19cc.jpg
+ create mode 100644 test/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+ create mode 100644 test/e6774eccef8476f9f74e827a3d7944e0.jpg
+ create mode 100644 test/eb9bcca11681182e7406e589f64e19cc.jpg
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git reset 'test'
+fatal: ambiguous argument 'test': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git reset test
+fatal: ambiguous argument 'test': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git reset test/
+fatal: ambiguous argument 'test/': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git reset 'test/'
+fatal: ambiguous argument 'test/': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git rm test/
+fatal: not removing 'test/' recursively without -r
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    test/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+        deleted:    test/e6774eccef8476f9f74e827a3d7944e0.jpg
+        deleted:    test/eb9bcca11681182e7406e589f64e19cc.jpg
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git log
+commit 1117500c9dd6fa02f78ab0c703720646f43810fb (HEAD -> master)
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:16:22 2018 +0700
+
+    Add folder image
+
+commit fd7ec476bd6301ea8af844bec4f0ece7db1e4fd1
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:59:24 2018 +0700
+
+    Add all txt files
+
+commit 0c7cfaa5846ce3ac60db1a50ffda477f9b02069f
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:50:27 2018 +0700
+
+    Add coba.html
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git diff
+diff --git a/test/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg b/test/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+deleted file mode 100644
+index 56d5b67..0000000
+Binary files a/test/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg and /dev/null differ
+diff --git a/test/e6774eccef8476f9f74e827a3d7944e0.jpg b/test/e6774eccef8476f9f74e827a3d7944e0.jpg
+deleted file mode 100644
+index 564bbdf..0000000
+Binary files a/test/e6774eccef8476f9f74e827a3d7944e0.jpg and /dev/null differ
+diff --git a/test/eb9bcca11681182e7406e589f64e19cc.jpg b/test/eb9bcca11681182e7406e589f64e19cc.jpg
+deleted file mode 100644
+index 0c5c824..0000000
+Binary files a/test/eb9bcca11681182e7406e589f64e19cc.jpg and /dev/null differ
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git rm -r test/*
+rm 'test/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg'
+rm 'test/e6774eccef8476f9f74e827a3d7944e0.jpg'
+rm 'test/eb9bcca11681182e7406e589f64e19cc.jpg'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    test/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+        deleted:    test/e6774eccef8476f9f74e827a3d7944e0.jpg
+        deleted:    test/eb9bcca11681182e7406e589f64e19cc.jpg
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git reset image\
+>
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git commit -m "Reset folder image"
+[master 14afb9b] Reset folder image
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 test/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+ delete mode 100644 test/e6774eccef8476f9f74e827a3d7944e0.jpg
+ delete mode 100644 test/eb9bcca11681182e7406e589f64e19cc.jpg
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git log
+commit 14afb9ba80d1d6d36dba81cc28e89143e2b4b444 (HEAD -> master)
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:39:05 2018 +0700
+
+    Reset folder image
+
+commit 1117500c9dd6fa02f78ab0c703720646f43810fb
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:16:22 2018 +0700
+
+    Add folder image
+
+commit fd7ec476bd6301ea8af844bec4f0ece7db1e4fd1
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:59:24 2018 +0700
+
+    Add all txt files
+
+commit 0c7cfaa5846ce3ac60db1a50ffda477f9b02069f
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:50:27 2018 +0700
+
+    Add coba.html
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git add 'image\'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git commit -m "Add folder image"
+On branch master
+Untracked files:
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+nothing added to commit but untracked files present
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git log
+commit 14afb9ba80d1d6d36dba81cc28e89143e2b4b444 (HEAD -> master)
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:39:05 2018 +0700
+
+    Reset folder image
+
+commit 1117500c9dd6fa02f78ab0c703720646f43810fb
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:16:22 2018 +0700
+
+    Add folder image
+
+commit fd7ec476bd6301ea8af844bec4f0ece7db1e4fd1
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:59:24 2018 +0700
+
+    Add all txt files
+
+commit 0c7cfaa5846ce3ac60db1a50ffda477f9b02069f
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:50:27 2018 +0700
+
+    Add coba.html
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git add 'image'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git commit -m "Add folder image"
+On branch master
+Untracked files:
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+nothing added to commit but untracked files present
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git log
+commit 14afb9ba80d1d6d36dba81cc28e89143e2b4b444 (HEAD -> master)
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:39:05 2018 +0700
+
+    Reset folder image
+
+commit 1117500c9dd6fa02f78ab0c703720646f43810fb
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:16:22 2018 +0700
+
+    Add folder image
+
+commit fd7ec476bd6301ea8af844bec4f0ece7db1e4fd1
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:59:24 2018 +0700
+
+    Add all txt files
+
+commit 0c7cfaa5846ce3ac60db1a50ffda477f9b02069f
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:50:27 2018 +0700
+
+    Add coba.html
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git add 'image'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git commit -m "Add folder image"
+On branch master
+Untracked files:
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+nothing added to commit but untracked files present
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git diff HEAD
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git diff
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git log
+commit 14afb9ba80d1d6d36dba81cc28e89143e2b4b444 (HEAD -> master)
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:39:05 2018 +0700
+
+    Reset folder image
+
+commit 1117500c9dd6fa02f78ab0c703720646f43810fb
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:16:22 2018 +0700
+
+    Add folder image
+
+commit fd7ec476bd6301ea8af844bec4f0ece7db1e4fd1
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:59:24 2018 +0700
+
+    Add all txt files
+
+commit 0c7cfaa5846ce3ac60db1a50ffda477f9b02069f
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:50:27 2018 +0700
+
+    Add coba.html
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git add 'image1'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git commit -m "Add folder image1"
+[master 19197a2] Add folder image1
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 image1/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+ create mode 100644 image1/e6774eccef8476f9f74e827a3d7944e0.jpg
+ create mode 100644 image1/eb9bcca11681182e7406e589f64e19cc.jpg
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    image/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+        deleted:    image/e6774eccef8476f9f74e827a3d7944e0.jpg
+        deleted:    image/eb9bcca11681182e7406e589f64e19cc.jpg
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git rm -r "image1\"
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+> bash: unexpected EOF while looking for matching `"'
+bash: syntax error: unexpected end of file
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    image/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+        deleted:    image/e6774eccef8476f9f74e827a3d7944e0.jpg
+        deleted:    image/eb9bcca11681182e7406e589f64e19cc.jpg
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git rm -r image/*
+rm 'image/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg'
+rm 'image/e6774eccef8476f9f74e827a3d7944e0.jpg'
+rm 'image/eb9bcca11681182e7406e589f64e19cc.jpg'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    image/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+        deleted:    image/e6774eccef8476f9f74e827a3d7944e0.jpg
+        deleted:    image/eb9bcca11681182e7406e589f64e19cc.jpg
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    image/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+        deleted:    image/e6774eccef8476f9f74e827a3d7944e0.jpg
+        deleted:    image/eb9bcca11681182e7406e589f64e19cc.jpg
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   coba.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git commit -m "Change content of coba.html"
+[master 5a0c606] Change content of coba.html
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 image/dc3eb02fa7c7da9a0d0e3881b80d4f92.jpg
+ delete mode 100644 image/e6774eccef8476f9f74e827a3d7944e0.jpg
+ delete mode 100644 image/eb9bcca11681182e7406e589f64e19cc.jpg
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   coba.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git commit -m "Edit content of coba.html"
+On branch master
+Changes not staged for commit:
+        modified:   coba.html
+
+Untracked files:
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+no changes added to commit
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git add 'coba.html'
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git commit -m "Edit content of coba.html"
+[master 1467b84] Edit content of coba.html
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        B-2. TECHNOLOGY INTRODUCTION.pptx
+        C-3. GITHUB JQUERY MOBILE-m.pptx
+        Step/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git log
+commit 1467b849c35ce5d2fa63e0690c4bf26cbb22e477 (HEAD -> master)
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:58:25 2018 +0700
+
+    Edit content of coba.html
+
+commit 5a0c60642997bd7ea5adb37f5185f25400f426c6
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:56:59 2018 +0700
+
+    Change content of coba.html
+
+commit 19197a2ba73a57bcc4a32aab620b4824f207208b
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:47:43 2018 +0700
+
+    Add folder image1
+
+commit 14afb9ba80d1d6d36dba81cc28e89143e2b4b444
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:39:05 2018 +0700
+
+    Reset folder image
+
+commit 1117500c9dd6fa02f78ab0c703720646f43810fb
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 22:16:22 2018 +0700
+
+    Add folder image
+
+commit fd7ec476bd6301ea8af844bec4f0ece7db1e4fd1
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:59:24 2018 +0700
+
+    Add all txt files
+
+commit 0c7cfaa5846ce3ac60db1a50ffda477f9b02069f
+Author: Jemima C.S <jemimacianisetiawan@gmail.com>
+Date:   Sun Mar 11 21:50:27 2018 +0700
+
+    Add coba.html
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git remote add origin https://github.com/Jemimacs/CobaGit
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git push -u origin master
+
+
+
+To https://github.com/Jemimacs/CobaGit
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Jemimacs/CobaGit'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git remote add origin git remote add origin https://github.com/Jemimacs/CobaGit
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git remote add origin https://github.com/Jemimacs/CobaGit
+fatal: remote origin already exists.
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git push -u origin master
+To https://github.com/Jemimacs/CobaGit
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Jemimacs/CobaGit'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git pull
+warning: no common commits
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/Jemimacs/CobaGit
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git pull origin master
+From https://github.com/Jemimacs/CobaGit
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git branch
+* master
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git add test
+fatal: pathspec 'test' did not match any files
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git add test.txt
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git commit -m "Add test txt"
+[master c6aa266] Add test txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git push -u origin master
+To https://github.com/Jemimacs/CobaGit
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Jemimacs/CobaGit'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git push htelp
+fatal: 'htelp' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git push help
+fatal: 'help' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git push --help
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git pull origin master
+From https://github.com/Jemimacs/CobaGit
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+asus@DESKTOP-TCA06OS MINGW64 /d/PPM (master)
+$ git pull

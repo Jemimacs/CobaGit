@@ -1,0 +1,29 @@
+GITHUB
+
+I. Versioning
+versioning, caranya biasanya copy" folder, tapi
+dengan github, versioning bisa dilakukan otomatis
+*Version control (VCS)
+Ada 3 jenis: local, pusat, terdistribusi
+- Local: ada di dalam 1 komputer (dalam komputer itu sendiri)
+ex: VCS, RCS (di mac OS)
+RCS cara untuk kembali ke versi sebelumnya
+- Terpusat: ada server.
+ex: ada 1 server. semua org bisa akses ke file yang ada di server tsb. jika ada perubahan, akan muncul informasi apakah file yang diganti ingin di commit atau tdk.
+kekurangan, jika server mati atau rusak ...
+- Terdistribusi
+bisa merubah file yang ingin dirubah di komp kita sendiri baru masukkan (push) ke server.
+jika salah, bisa ambil versi asli dari server.
+walaupun tidak ada koneksi ke server, masih bisa kerja.
+
+*GIT vs Github
+git -> sistemnya
+github -> tempat simpan file. bentuknya hosting
+
+*GIT
+sistem: terdistribusi
+kita bisa menggunakan versi kita sendiri, server bisa menyesuaikan dengan git
+versioning git sistemnya pakai stage" (pakai pointer)
+ketika merubah, tidak merubah di file yang dipakai. sehingga harus di COMMIT kalau mau melakukan perubahan
+
+file akan masuk staged hanya setelah di commit

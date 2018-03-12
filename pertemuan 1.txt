@@ -1,0 +1,72 @@
+Penilaian:
+Tes 1: 25%
+UTS: 25%
+Tes 2: 25%
+UAS: 25%
+
+Format Tugas
+email: kirimtugasppm@gmail.com
+format file: ddmm_ppm_a/b_nrp
+subject email: ddmm_ppm_a/b_nrp
+5 digit nrp
+-----------------------------------------------------------------
+TECHNOLOGY
+
+I. mobile phone evaluation
+semakin bertambah era, kecepatan koneksi semakin bertambah cepat.
+orang mulai pakai mobile phone saat 3G, 4G
+1. 1st Generation
+1G
++: hanya suara
+-: hanya punya kapasitas trafik kecil. mahal
+
+2. 2nd Generation
+2G
++: bisa untuk telp, sms (karena data sudah ada yg digital)
+-: kecepatan transfer data masih sangat rendah, jangkauan jaringan terbatas pada BTS
+BTS -> agar data bisa terkoneksi. semakin besar BTS, bs semakin menampung bnyk pelanggan
+
+2.5G
+GPRS / edge
+
+3. 3rd generation 
+3G
++: kualitas lebih bagus, lebih aman. bisa telp, browsing / terima email bersamaan. antar operator sudah bs saling koneksi, ada roaming nasional dan internasional. bisa video conferencing tapi gambar masih kotak" saja. bs browsing, internetan.
+3G menurut ITU ...
+-: 
+
+4. 4th generation
+4G (3G and beyond)
++: tingkat download lebih cepat, lebih besar. dukungan mobilitas lebih meningkat (bisa nonton youtube tanpa download, pakai streaming. di kantor kalau mau meeting dulu harus ketemu, skrg bs video conference)
+
+5. 5th generation
+5G
+
+Kenapa harus belajar internet?
+- Web trafic
+
+Teknologi harus efisien, cepat, memiliki tujuan, dipertimbangkan GUI (uk. gambar, layout)
+
+II. Pemrograman mobile
+a. definisi
+pembuatan aplikasi berjalan pada perangkat bergerak seperti HP / tablet
+platform yang sangat populer adalah iOS dan android.
+android lebih bebas. iOS kebergantungan, tapi pemanfaatan memory lebih bagus daripad android
+b. app: android studio (android), swift(iOS)
+c. Framework Multiplatform
+yang: Ionic, Xamarin
+- appcelerator -> iOS, tablet android
+hybird -> html dulu baru diconvert
+basis: XML
+- rhomobile
+basis: html, css, js
+- MoSync
+basis: html, css, js, c++
+- PhoneGap
+untuk membuat aplikasi native (membuat suatu file apk). 
+program native -> dri html dkk dimasukkan phoneGap diconvert jadi file apk lalu dri file apk diinstal di device.
+- Xamarin
+menyediakan VS add-ins (bisa dikembangkan untuk iOS dan android langsung)
+
+III. Mobile Phone Evolution
+

@@ -1,0 +1,12 @@
+1. Mobile phone revolution. semakin majunya era, kecepatan koneksi bertambah cepat dan canggih.
+evolusi koneksi dimulai dari 1G - 5G. Orang mulai menggunakan mobile phone ketika koneksi sudah berada pada era 3G.
+1G: media yang dapat digunakan hanyalah suara. namun masih memiliki kapasitas trafik yang rendah.
+2G: sudah bisa untuk SMS dan telepon. Tetapi kecepatan dan jangkauan jaringan masih terbatas.
+3G: sudah bisa digunakan untuk browsing, lebih aman, kecepatan jaringan lebih cepat daripada 2G.
+4G: proses brwosing, downloading jauh lebih cepat dibandingkan era 3G.
+5G: masih dalam perkembangan hingga saat ini
+
+2. program yang lebih efisien dalam waktu, dan bisa didapatkan dengan mudah, dan harga yang terjangkau.
+
+3. Suatu aplikasi yang memudahkan pengerjaan / pembuatan suatu program. Misalkan ada suatu proyek yang dikerjakan dalam suatu tim. Dengan github, pengerjaan proyek dapat dikerjakan lebih efisien, tanpa harus bertatap muka.
+Proyek dimasukkan ke dalam aplikasi github. Ketika isi project diedit dan pembuat ingin meng-update project, github dapat menggabungkan project yang lama dengan project yang diedit, sehingga isi project dapat up-to-date, dan pengguna tidak perlu mengupload project baru setiap kali ada perubahan pada program yang dibuat.  
