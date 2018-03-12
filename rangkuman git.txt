@@ -11,8 +11,6 @@ ex: git add octocat.txt
 
 git add '*.jenisfile' : untuk menambahkan file-file dengan tipe yang sama
 
-ciani
-
 
 git commit
 File yang dirubah masih berada pada staging area, masih belum tersimpan di respository.
@@ -52,6 +50,8 @@ git checkout namabranch_yang_mau_diswitch: untuk men-switch branch yang ada. mak
 git rm: menghapus file yang diinginkan pada branch
 ex: git rm '*.txt'
 
+git rm -r 'namafile'
+-r: recursive
 git merge namabranch_yang_ingin_di_merge: menggabungkan branch ke main branch
 Sebelum melakukan merge branch, posisikan pointer di main branch dulu. dengan command-> git checkout namamasterbranch
 
